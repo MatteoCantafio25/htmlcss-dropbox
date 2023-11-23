@@ -4,3 +4,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Generics */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Utils */
+.flex {
+    display: flex;
+}
+
+.border {
+    border: 2px dashed black;
+}
+
+/* Header */
+
+.navbar {
+    height: 80px;
+    min-width: 100%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav {
+    height: 50px;
+    width: 500px;
+}
+
+.right-nav {
+    height: 50px;
+    width: 500px;
+}
+
+.blue-container {
+    min-height: 500px;
+    min-width: 100%;
+    display: flex;
+    background-color: #B4D0E7;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px;
+}
+
+.free-trial-box {
+    height: 450px;
+    width: 450px;
+}
+
+.trial-img-box {
+    height: 450px;
+    width: 650px;
+}
