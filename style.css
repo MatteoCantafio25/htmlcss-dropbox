@@ -10,6 +10,41 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
 /* Utils */
 .flex {
     display: flex;
@@ -19,16 +54,62 @@ body {
     border: 2px dashed black;
 }
 
+.btn {
+    padding: 10px 15px;
+    display: inline-block;
+    max-height: 60px;
+}
+
+.btn-small {
+    padding: 5px 10px;
+}
+
+.btn-blue {
+    background-color: #0061FF;
+    color: white;
+}
+
+.mb-30 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.a .solid {
+    border: 1px solid black;
+    border-width: 100%;
+}
+
+.decoration {
+    text-decoration: underline;
+    color: #4230F1;
+}
+
+.bb {
+    border-bottom: 1px solid black;
+}
+
 /* Header */
 
 .navbar {
     height: 80px;
     min-width: 100%;
-    display: flex;
     background-color: white;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .left-nav {
@@ -37,72 +118,138 @@ body {
 }
 
 .right-nav {
+    justify-content: flex-end;
     height: 50px;
     width: 500px;
 }
 
-.blue-container {
-    min-height: 500px;
-    min-width: 100%;
+/* Jumbotron */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#jumbotron {
     background-color: #B4D0E7;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 40px;
-    min-width: 55%;
-    padding-left: 25%;
-    padding-right: 25%;
+    min-height: 650px;
 }
 
-.free-trial-box {
+
+.row-jumb {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col-jumb-30 {
     flex-basis: 30%;
-    height: 450px;
 }
 
-.trial-img-box {
-    height: 450px;
+.col-jumb-70 {
     flex-basis: 70%;
 }
 
+#jumbotron .container {
+    position: relative;
+    top: 75px;
+}
+
 /* Main */
+
+/* Jumbotron */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#jumbotron {
+    background-color: #B4D0E7;
+    min-height: 650px;
+}
+
+
+.row-jumb {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col-jumb-30 {
+    flex-basis: 30%;
+}
+
+.col-jumb-70 {
+    flex-basis: 70%;
+}
+
+#jumbotron .container {
+    position: relative;
+    top: 75px;
+}
+
+/* Price section */
+
+#price {
+    background-color: white;
+    min-height: 650px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row.g-20>.col-33 {
+    padding: 0 40px;
+}
+
+.row.g-20 {
+    margin: 0 -40px;
+}
+
+
+.col-33 {
+    flex-basis: calc(100% / 3);
+    min-height: 600px;
+}
+
+
+.col-100 {
+    flex-basis: 100%;
+    min-height: 300px;
+}
+
+.plans-card {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#price .container {
+    position: relative;
+    top: 100px;
+}
+
+
+/*------*/
 
 .white-container {
     min-height: 500px;
     min-width: 50%;
     padding-left: 25%;
     padding-right: 25%;
-    padding-top: 80px;
+    padding-top: 240px;
     padding-bottom: 80px;
     align-items: center;
     justify-content: space-between;
     background-color: white;
-}
-
-
-.row {
-    gap: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.col {
-    flex-basis: calc(100% / 3 - 300px / 3);
-}
-
-.card {
-    min-height: 600px;
-    min-width: 280px;
-    background-color: aquamarine;
-}
-
-.full-col {
-    flex-basis: 100%;
-}
-
-.big-card {
-    min-height: 400px;
-    background-color: aquamarine;
 }
 
 .contact-img-box {
