@@ -158,38 +158,6 @@ header {
 
 /* Main */
 
-/* Jumbotron */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-
-}
-
-#jumbotron {
-    background-color: #B4D0E7;
-    min-height: 650px;
-}
-
-
-.row-jumb {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.col-jumb-30 {
-    flex-basis: 30%;
-}
-
-.col-jumb-70 {
-    flex-basis: 70%;
-}
-
-#jumbotron .container {
-    position: relative;
-    top: 75px;
-}
 
 /* Price section */
 
@@ -230,6 +198,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0 24px;
 }
 
 #price .container {
