@@ -70,6 +70,14 @@ header {
     margin: 15px 0;
 }
 
+.btn-white {
+    background-color: white;
+    color: black;
+    margin: 15px 0;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -89,6 +97,7 @@ header {
 .pb-15 {
     padding-bottom: 15px;
 }
+
 
 .mt-20 {
     margin-top: 20px;
@@ -111,6 +120,11 @@ header {
     border-width: 100%;
 }
 
+.normal {
+    color: #3E3EF2;
+    text-decoration: underline;
+}
+
 .decoration {
     text-decoration: underline;
     color: #4230F1;
@@ -118,6 +132,15 @@ header {
 
 .bb {
     border-bottom: 1px solid #E3E3E5;
+}
+
+.fw-800 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.txt-xl {
+    font-size: 1.8rem;
 }
 
 /* Header */
@@ -332,13 +355,25 @@ header {
 }
 
 
-/*------*/
+/* Partner */
+
+.partner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 245px;
+}
+
+
 
 .white-container {
     min-height: 500px;
-    min-width: 50%;
-    padding-left: 25%;
-    padding-right: 25%;
+    min-width: 30%;
+    padding-left: 35%;
+    padding-right: 35%;
     padding-top: 240px;
     padding-bottom: 80px;
     align-items: center;
@@ -349,66 +384,216 @@ header {
 
 .contact-img-box {
     flex-basis: 70%;
-    height: 450px;
-    background-color: purple;
+    min-height: 450px;
 }
 
 .contact-box {
     flex-basis: 30%;
     height: 450px;
-    background-color: purple;
+    padding: 0 20px;
+}
+
+.contact-box>h3 {
+    padding-bottom: 20px;
+}
+
+/* Business Features */
+
+.simplify-container {
+    min-width: 75%;
+    min-height: 800px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding-left: 17%;
+    padding-right: 17%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.simplify-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .simplify-col {
-    flex-basis: calc(100% / 6 - 280px / 6);
+    flex-basis: calc(100% / 6 - 399px / 6);
+    margin: 10px 10px;
 }
 
 .simplify-card {
     min-height: 300px;
-    min-width: 280px;
-    background-color: yellow;
+    min-width: 382px;
 }
 
+/* Team */
+
 .team-container {
-    min-height: 300px;
-    min-width: 50%;
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
+    max-width: 1200px;
+    margin: 120px auto;
 }
 
 .team-box {
     flex-basis: 100%;
     min-height: 200px;
-    background-color: red;
 }
 
-.designit-cointainer {
-    min-height: 450px;
-    min-width: 100%;
+/* Designit */
+
+.designit {
+    max-width: 100%;
+    max-height: 600px;
+    margin: 0 auto;
     background-color: white;
 }
 
+.designit-container {
+    height: 600px;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-grow: 0;
+}
+
 .designit-box {
-    height: 450px;
-    flex-basis: calc(100% / 3);
-    background-color: blue;
+    height: 600px;
+    width: 615px;
+}
+
+
+.designit-box-info {
+    height: 600px;
+    width: 615px;
+    padding: 40px 40px;
+}
+
+.designit-box-squares {
+    height: 600px;
+    width: 612px;
+}
+
+
+
+#designit-logo {
+    height: 300px;
+    width: 300px;
+    background-color: #A2D39B;
+    background-image: url(./img/designit.svg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#arizona-logo {
+    height: 300px;
+    width: 300px;
+    background-color: #61082B;
+    position: relative;
+    left: 300px;
+    bottom: 300px;
+    background-image: url(./img/arizona_state_university.svg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#florida-logo {
+    height: 300px;
+    width: 300px;
+    background-color: #0093CE;
+    position: relative;
+    bottom: 300px;
+    background-image: url(./img/university_of_florida.svg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#toops-logo {
+    height: 300px;
+    width: 300px;
+    background-color: #FF1C1C;
+    position: relative;
+    left: 300px;
+    top: -600px;
+    background-image: url(./img/topps.svg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#world-logo {
+    height: 300px;
+    width: 300px;
+    background-color: #D5001F;
+    position: relative;
+    left: 0;
+    background-image: url(./img/world_bicycle_relief.svg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hearst-logo {
+    height: 300px;
+    width: 300px;
+    background-color: #B4D0E7;
+    position: relative;
+    left: 300px;
+    top: -300px;
+    background-image: url(./img/hearst_corp.svg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#lonely-logo {
+    height: 300px;
+    width: 300px;
+    background-color: #0D2481;
+    position: relative;
+    top: -300px;
+    left: 0;
+    background-image: url(./img/lonely_planet.svg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#clear-logo {
+    height: 300px;
+    width: 300px;
+    background-color: #FFD830;
+    position: relative;
+    left: 300px;
+    top: -600px;
+    background-image: url(./img/clear_channel.svg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.business {
+    background-color: #B4D0E7;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .business-container {
-    min-height: 300px;
-    min-width: 50%;
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-bottom: 20px;
-    align-items: center;
+    max-width: 1200px;
+    margin: 120px auto;
     background-color: #B4D0E7;
 }
 
 .business-box {
-    flex-basis: 100%;
+    min-width: 1200px;
     min-height: 200px;
     background-color: #B4D0E7;
 }
