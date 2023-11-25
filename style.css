@@ -51,7 +51,7 @@ header {
 }
 
 .border {
-    border: 2px dashed black;
+    border: 1px solid black;
 }
 
 .btn {
@@ -67,18 +67,43 @@ header {
 .btn-blue {
     background-color: #0061FF;
     color: white;
+    margin: 15px 0;
 }
 
-.mb-30 {
+.mb-20 {
     margin-bottom: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-27 {
+    margin-top: 27px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-15 {
+    padding-bottom: 15px;
 }
 
 .mt-20 {
     margin-top: 20px;
 }
 
+.mt-16 {
+    margin-top: 16px;
+}
+
 .mr-50 {
     margin-right: 50px;
+}
+
+.mr-10 {
+    margin-right: 10px;
 }
 
 .a .solid {
@@ -92,7 +117,7 @@ header {
 }
 
 .bb {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #E3E3E5;
 }
 
 /* Header */
@@ -166,6 +191,78 @@ header {
     min-height: 650px;
 }
 
+.fatturazione {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+
+.blue-dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid #0061FF;
+    position: absolute;
+    top: 123px;
+    left: 4px;
+}
+
+.mensile {
+    position: absolute;
+    top: 120px;
+    left: 25px;
+}
+
+.grey-dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #D4D4D7;
+    position: absolute;
+    top: 123px;
+    left: 250px;
+
+}
+
+.annuale {
+    position: absolute;
+    top: 120px;
+    left: 270px;
+}
+
+.header-card {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 40px;
+    flex-wrap: wrap;
+    min-width: 100%;
+    border-bottom: 1px solid #E3E3E5;
+}
+
+.header-card-100 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 30px;
+    min-width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #E3E3E5;
+}
+
+.card-content {
+    padding: 30px 24px;
+}
+
+.card-content-100 {
+    padding: 0 20px;
+}
+
 
 .row {
     display: flex;
@@ -189,21 +286,49 @@ header {
 
 
 .col-100 {
-    flex-basis: 100%;
-    min-height: 300px;
+    min-height: 260px;
+    margin-top: 70px;
+    border: 1px solid #E3E3E5;
 }
 
 .plans-card {
     min-height: 500px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    padding: 0 24px;
+    border: 1px solid #E3E3E5;
 }
+
+.plans-card-100 {
+    min-height: 210px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 #price .container {
     position: relative;
     top: 100px;
+}
+
+.enterprise-box {
+    display: flex;
+    min-height: 40px;
+    min-width: 1140px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.enterprise {
+    position: relative;
+    top: 30px;
+}
+
+.soluzioni {
+    position: relative;
+    top: 45px;
 }
 
 
@@ -219,6 +344,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: white;
+    margin-top: 100px
 }
 
 .contact-img-box {
