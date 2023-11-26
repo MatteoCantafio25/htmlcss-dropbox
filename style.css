@@ -62,12 +62,14 @@ header {
 
 .btn-small {
     padding: 5px 10px;
+    display: inline-block;
 }
 
 .btn-blue {
     background-color: #0061FF;
     color: white;
     margin: 15px 0;
+    display: inline-block;
 }
 
 .btn-white {
@@ -76,6 +78,17 @@ header {
     margin: 15px 0;
     border: 1px solid black;
     margin-top: 30px;
+    display: inline-block;
+}
+
+.btn-white-excp {
+    background-color: white;
+    color: black;
+    margin: 15px 0;
+    margin-top: 30px;
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
 }
 
 .mb-20 {
@@ -98,6 +111,14 @@ header {
     padding-bottom: 15px;
 }
 
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
 
 .mt-20 {
     margin-top: 20px;
@@ -113,6 +134,10 @@ header {
 
 .mr-10 {
     margin-right: 10px;
+}
+
+.ml-600 {
+    margin-left: 600px;
 }
 
 .a .solid {
@@ -134,6 +159,14 @@ header {
     border-bottom: 1px solid #E3E3E5;
 }
 
+.bb-black {
+    border-bottom: 1px solid black;
+}
+
+.bt-black {
+    border-top: 1px solid black;
+}
+
 .fw-800 {
     font-weight: 900;
     font-size: 1.5rem;
@@ -141,6 +174,11 @@ header {
 
 .txt-xl {
     font-size: 1.8rem;
+}
+
+.color-granada {
+    color: #61082B;
+    font-size: 2.5rem;
 }
 
 /* Header */
@@ -586,6 +624,8 @@ header {
     align-items: center;
 }
 
+/* Business */
+
 .business-container {
     max-width: 1200px;
     margin: 120px auto;
@@ -596,22 +636,21 @@ header {
     min-width: 1200px;
     min-height: 200px;
     background-color: #B4D0E7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .question-container {
-    min-height: 300px;
-    min-width: 50%;
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
+    max-width: 1200px;
+    margin: 120px auto;
+    background-color: #B4D0E7;
 }
 
 .question-box {
     flex-basis: 100%;
     min-height: 500px;
-    background-color: darkcyan;
+    background-color: white;
 }
 
 /* Footer */
