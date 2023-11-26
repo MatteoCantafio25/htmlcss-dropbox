@@ -44,7 +44,6 @@ header {
     z-index: 1;
 }
 
-
 /* Utils */
 .flex {
     display: flex;
@@ -97,6 +96,10 @@ header {
 
 .mb-10 {
     margin-bottom: 10px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
 }
 
 .mt-27 {
@@ -178,7 +181,10 @@ header {
 
 .color-granada {
     color: #61082B;
-    font-size: 2.5rem;
+}
+
+.border-white {
+    border: 1px solid white;
 }
 
 /* Header */
@@ -524,6 +530,8 @@ header {
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    left: -5px;
 }
 
 #arizona-logo {
@@ -531,7 +539,7 @@ header {
     width: 300px;
     background-color: #61082B;
     position: relative;
-    left: 300px;
+    left: 295px;
     bottom: 300px;
     background-image: url(./img/arizona_state_university.svg);
     background-size: 200px;
@@ -545,6 +553,7 @@ header {
     background-color: #0093CE;
     position: relative;
     bottom: 300px;
+    left: -5px;
     background-image: url(./img/university_of_florida.svg);
     background-size: 200px;
     background-repeat: no-repeat;
@@ -556,7 +565,7 @@ header {
     width: 300px;
     background-color: #FF1C1C;
     position: relative;
-    left: 300px;
+    left: 295px;
     top: -600px;
     background-image: url(./img/topps.svg);
     background-size: 200px;
@@ -569,7 +578,7 @@ header {
     width: 300px;
     background-color: #D5001F;
     position: relative;
-    left: 0;
+    left: 16px;
     background-image: url(./img/world_bicycle_relief.svg);
     background-size: 200px;
     background-repeat: no-repeat;
@@ -581,7 +590,7 @@ header {
     width: 300px;
     background-color: #B4D0E7;
     position: relative;
-    left: 300px;
+    left: 316px;
     top: -300px;
     background-image: url(./img/hearst_corp.svg);
     background-size: 200px;
@@ -595,7 +604,7 @@ header {
     background-color: #0D2481;
     position: relative;
     top: -300px;
-    left: 0;
+    left: 16px;
     background-image: url(./img/lonely_planet.svg);
     background-size: 200px;
     background-repeat: no-repeat;
@@ -607,7 +616,7 @@ header {
     width: 300px;
     background-color: #FFD830;
     position: relative;
-    left: 300px;
+    left: 316px;
     top: -600px;
     background-image: url(./img/clear_channel.svg);
     background-size: 200px;
@@ -644,7 +653,6 @@ header {
 .question-container {
     max-width: 1200px;
     margin: 120px auto;
-    background-color: #B4D0E7;
 }
 
 .question-box {
@@ -655,18 +663,53 @@ header {
 
 /* Footer */
 
-.footer-container {
-    min-height: 300px;
-    min-width: 80%;
-    background-color: #23272A;
-    align-items: center;
+.bgc-black {
+    background-color: black;
+    height: 530px;
+    display: flex;
     justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 120px auto;
+    justify-content: space-between;
 }
 
 .dropbox-box {
-    background-color: salmon;
-    min-height: 300px;
+    min-height: 400px;
     width: 200px;
+    color: white;
+    margin-right: 40px;
+}
+
+.prodotti-box {
+    min-height: 400px;
+    width: 200px;
+    color: white;
+    margin-right: 40px;
+}
+
+.azienda-box {
+    min-height: 400px;
+    width: 200px;
+    color: white;
+    margin-right: 40px;
+}
+
+.supporto-box {
+    min-height: 400px;
+    width: 200px;
+    color: white;
+    margin-right: 40px;
+}
+
+.community-box {
+    min-height: 400px;
+    width: 300px;
+    color: white;
+}
+
+.footer-container h3 {
+    font-size: 1.5rem;
 }
