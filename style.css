@@ -187,6 +187,23 @@ header {
     border: 1px solid white;
 }
 
+.img-w-50 {
+    width: 50%;
+    filter: invert(1);
+}
+
+.img-w-40 {
+    width: 40%;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-60 {
+    margin-top: 80px;
+}
+
 /* Header */
 
 .navbar {
@@ -486,144 +503,76 @@ header {
 
 /* Designit */
 
-.designit {
-    max-width: 100%;
-    max-height: 600px;
-    margin: 0 auto;
-    background-color: white;
-}
-
-.designit-container {
-    height: 600px;
-    flex-basis: 100%;
+#designit {
+    margin-top: 50px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+}
+
+.big-box {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-box-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 30px 30px;
+}
+
+.small-box {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    flex-grow: 0;
-}
-
-.designit-box {
-    height: 600px;
-    width: 615px;
+    border: 15px solid transparent;
 }
 
 
-.designit-box-info {
-    height: 600px;
-    width: 615px;
-    padding: 40px 40px;
-}
-
-.designit-box-squares {
-    height: 600px;
-    width: 612px;
-}
-
-
-
-#designit-logo {
-    height: 300px;
-    width: 300px;
+.bcg-A2D39B {
     background-color: #A2D39B;
-    background-image: url(./img/designit.svg);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    left: -5px;
 }
 
-#arizona-logo {
-    height: 300px;
-    width: 300px;
+.bcg-61082B {
     background-color: #61082B;
-    position: relative;
-    left: 295px;
-    bottom: 300px;
-    background-image: url(./img/arizona_state_university.svg);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-#florida-logo {
-    height: 300px;
-    width: 300px;
+.bcg-0093CE {
     background-color: #0093CE;
-    position: relative;
-    bottom: 300px;
-    left: -5px;
-    background-image: url(./img/university_of_florida.svg);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-#toops-logo {
-    height: 300px;
-    width: 300px;
+.bcg-FF1C1C {
     background-color: #FF1C1C;
-    position: relative;
-    left: 295px;
-    top: -600px;
-    background-image: url(./img/topps.svg);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-#world-logo {
-    height: 300px;
-    width: 300px;
+.bcg-D5001F {
     background-color: #D5001F;
-    position: relative;
-    left: 16px;
-    background-image: url(./img/world_bicycle_relief.svg);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-#hearst-logo {
-    height: 300px;
-    width: 300px;
+.bcg-B4D0E7 {
     background-color: #B4D0E7;
-    position: relative;
-    left: 316px;
-    top: -300px;
-    background-image: url(./img/hearst_corp.svg);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-#lonely-logo {
-    height: 300px;
-    width: 300px;
+.bcg-0D2481 {
     background-color: #0D2481;
-    position: relative;
-    top: -300px;
-    left: 16px;
-    background-image: url(./img/lonely_planet.svg);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-#clear-logo {
-    height: 300px;
-    width: 300px;
+.bcg-FFD830 {
     background-color: #FFD830;
-    position: relative;
-    left: 316px;
-    top: -600px;
-    background-image: url(./img/clear_channel.svg);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
+.small-box:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Business */
 
 .business {
     background-color: #B4D0E7;
@@ -632,8 +581,6 @@ header {
     justify-content: center;
     align-items: center;
 }
-
-/* Business */
 
 .business-container {
     max-width: 1200px;
