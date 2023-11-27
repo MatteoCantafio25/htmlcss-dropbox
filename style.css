@@ -106,12 +106,20 @@ header {
     margin-bottom: 10px;
 }
 
+.mb-40 {
+    margin-bottom: 40px;
+}
+
 .mb-120 {
     margin-bottom: 120px;
 }
 
 .mt-40 {
     margin-top: 40px;
+}
+
+.mt-65 {
+    margin-top: 65px;
 }
 
 .mt-27 {
@@ -174,9 +182,14 @@ header {
     border-bottom: 1px solid #E3E3E5;
 }
 
-.border-grey {
+.border-grey-55 {
     border: 1px solid #E3E3E5;
     width: 55px
+}
+
+.border-grey-80 {
+    border: 1px solid #E3E3E5;
+    width: 80px
 }
 
 .bb-black {
@@ -201,7 +214,7 @@ header {
 }
 
 .border-white {
-    border: 1px solid white;
+    border: 1px solid #BABABA;
     width: 120px;
 }
 
@@ -210,8 +223,8 @@ header {
     filter: invert(1);
 }
 
-.img-w-40 {
-    width: 40%;
+.img-w50-normal {
+    width: 50%;
 }
 
 .mt-80 {
@@ -359,6 +372,7 @@ header {
 
 .card-content {
     padding: 30px 24px;
+    min-height: 700px;
 }
 
 .card-content-100 {
