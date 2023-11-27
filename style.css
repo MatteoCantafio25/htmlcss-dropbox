@@ -241,26 +241,64 @@ header {
     height: 80px;
     min-width: 100%;
     background-color: white;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .navbar ul {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
 }
 
 .left-nav {
-    height: 50px;
-    width: 500px;
+    overflow: hidden;
+    height: 80px;
+}
+
+.left-nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 27px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 2px solid transparent;
+}
+
+.left-nav a:hover {
+    border-bottom: 3px solid black;
+}
+
+.left-nav .drop-img:hover {
+    border: none;
 }
 
 .right-nav {
-    justify-content: flex-end;
-    height: 50px;
-    width: 500px;
+    overflow: hidden;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 680px;
+
+}
+
+.right-nav a {
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 27px;
+    border-bottom: 3px solid transparent;
+
+}
+
+.right-nav a:hover {
+    border-bottom: 2px solid black;
 }
 
 /* Jumbotron */
